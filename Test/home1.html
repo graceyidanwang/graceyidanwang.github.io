@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+   <meta name="Author" content="Yidan Wang">
+   <title>Yidan's UX Journey</title>
+   <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+   <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
+   <meta name="theme-color" content="#D3ABA5">
+   <style>
+    @font-face{
+        font-family:Qsregular;
+        src:url(./assets/webfonts/Quicksand-Regular.ttf);
+    }
+    *{
+    box-sizing: border-box;
+}
+ main{
+    max-width: 90em;
+    min-width: 30em;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 0rem;
+    }
+
+    body{
+        margin:0;
+
+    }
+
+nav{
+    height: 3.5rem;
+    background: rgba(255,255,255,0.9);
+    position: fixed;
+    width: 100%;
+}
+nav ul{
+    float: right;
+    margin-right: 13.25rem;
+    margin-top: 1.25rem;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 0px;
+    margin: 0px 20px;
+}
+
+nav ul li a{
+    font-family: 'Qsregular', serif;
+    position: relative;
+    padding: 5px 0;
+    color: #222222;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+}
+/* class=cool 是顶部菜单的格式 */
+.cool::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #222222;
+    transition: width .3s;
+    margin-top: 15px;
+}
+
+.cool:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.home-item a{
+    text-decoration: none;
+}
+div.home-item{
+    padding-top:10px;
+}
+
+/* 决定首页文字的格式 */
+h1{
+        font-family: 'Qsregular', serif;
+        color: #222222;
+        margin-bottom: 1rem;
+        font-size: 40px;
+        font-weight: 400;
+        margin-top: 0rem;
+        padding-top: 0rem;
+        max-width: 800px;
+        line-height: 48px;
+    }
+    h2{
+    font-family: 'Qsregular', serif;
+    font-size: 30px;
+    color: #222222;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+
+}
+main .bodyinfo{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: space-between; 
+}
+.bodyinfo .container{
+    max-width: 44em;
+    min-width: 14em;
+    padding-bottom:2em;
+    box-sizing: border-box;   
+    display:flex;
+    flex-wrap:wrap;
+}
+.container .subcontainer{
+    margin:auto;
+}
+.subcontainer .preview-pic{
+    width:100%;
+    height:100%;
+    margin:auto;
+}
+/* 首页缩略图文字的格式 */
+.preview-title{
+        font-family: 'Qsregular', serif;
+        color: #222222;
+        line-height: 30px;
+        font-weight: 400;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        text-decoration:none;
+        border-bottom: 1px solid #1d4257;
+}
+/* 决定个人介绍文字+缩略图介绍文字的格式是一样的 */
+    p{
+    font-family: 'Qsregular', serif;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 700px;
+    line-height: 30px;
+    padding-top:  18px;
+    margin-top: 18px;
+    color:#4B445A;
+}
+
+p.preview-des{
+    margin-top: 1px;
+    padding-top: 3px;
+    padding-bottom:  0px;
+    margin-bottom: 0px;
+    display:inline-block;
+    float:left;
+}
+p.preview-more{
+    margin-top: 1px;
+    padding-top: 3px;
+    padding-bottom:  0px;
+    margin-bottom: 0px;
+    display:inline-block;
+    float:right;
+}
+   </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="cool" href="">Work</a></li>      
+            <li><a class="cool" href="">About Me</a></li>
+            <li><a class="cool" href="" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="intro">
+            <div>
+                <img width="100%" src="./images/catlover.png">
+                <a href='https://pngtree.com/so/cat'>cat png from pngtree.com/</a>
+            </div>
+            <div>
+                <h1 class="homeheader">Hi, I'm Yidan!</h1>
+                <p>
+                    I'm a UX designer candidate and self-taught Front-End developer (on-going), thank you for visiting my site, looking forward to connect!
+                </p>
+                <p>
+                    <a class="link" href="mailto:grace.wang.yidan@gmail.com">Email</a> |
+                    <a class="link" href="https://www.linkedin.com/in/grace-yid-wang/">LinkedIn</a> |
+                    <a class="link" href="">Resume</a>
+                </p>
+            </div>
+        </div>
+        <div class="bodyinfo">
+            <div class="container">
+                <div class="subcontainer">
+                    <img class="preview-pic" src="./images/Home_Steam2.png" alt="Steam Website Redesign">   
+                    <div>
+                        <h2 class="preview-title">Steam Website Redesign</h2>
+                        <p class="preview-des">Simplified user flow with consistant languages for players to navigate.</p>
+                        <p class="preview-more">More</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="subcontainer">
+                    <img class="preview-pic" src="./images/Home_Steam.png" alt="Steam Website Redesign">   
+                    <div>
+                        <h2 class="preview-title">Steam Website Redesign</h2>
+                        <p class="preview-des">Simplified user flow with consistant languages for players to navigate.</p>
+                        <p class="preview-more">More</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="subcontainer">
+                    <img class="preview-pic" src="./images/Netflixpersona.PNG" alt="Steam Website Redesign">   
+                    <div>
+                        <h2 class="preview-title">Steam Website Redesign</h2>
+                        <p class="preview-des">Simplified user flow with consistant languages for players to navigate.</p>
+                        <p class="preview-more">More</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="subcontainer">
+                    <img class="preview-pic" src="./images/Netflixpersona.PNG" alt="Steam Website Redesign">   
+                    <div>
+                        <h2 class="preview-title">Steam Website Redesign</h2>
+                        <p class="preview-des">Simplified user flow with consistant languages for players to navigate.</p>
+                        <p class="preview-more">More</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div>&copy; Yidan Wang. All rights reserved.</div>       
+        <div>
+            <a class="link" href="mailto:grace.wang.yidan@gmail.com">Email</a> |
+            <a class="link" href="https://www.linkedin.com/in/grace-yid-wang/">LinkedIn</a>
+    </footer>
+</body>    
+</html>
