@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+}
+ main{
+    max-width: 90em;
+    min-width: 30em;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 0rem;
+    }
+
+    body{
+        margin:0;
+
+    }
+
+nav{
+    height: 3.5rem;
+    background: rgba(255,255,255,0.8);
+    position: fixed;
+    width: 100%;
+}
+
+/* 
+这是给 top nagivation bar 里的图片用的格式
+nav img{
+    position: absolute;
+    width: 200px;
+    right: 5%;
+    color: #202124;
+    font-size: 23px;
+    width: 55px;
+} */
+
+nav ul{
+    float: right;
+    margin-right: 13.25rem;
+    margin-top: 1.25rem;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 0px;
+    margin: 0px;
+}
+
+nav ul li a{
+    font-family: 'Qsregular', serif;
+    position: relative;
+    padding: 5px 0;
+    color: #202124;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* class=navi-top 是顶部菜单的格式 */
+.navi-top:hover{
+    font-weight:bolder;
+}
+
+
+/* 决定首页文字的格式 */
+h1{
+        font-family: 'Qsregular', serif;
+        color: #202124;
+        margin-bottom: 1rem;
+        font-size: 40px;
+        font-weight: 400;
+        margin-top: 0rem;
+        padding-top: 0rem;
+        max-width: 800px;
+        line-height: 48px;
+    }
+
+
+    h2{
+    font-family: 'Qsregular', serif;
+    font-size: 30px;
+    color: #202124;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+
+}
+h3{
+    font-family: 'Qsregular', serif;
+    color: #202124;
+}
+.intro .intro-pic{
+    display:block;
+    border-radius:10px;
+    box-shadow: 2px 1px 5px grey;
+}
+nav ul li a{
+    display:inline-block;
+    margin:15px;
+}
+main .bodyinfo{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: space-between; 
+}
+.bodyinfo .container{
+    max-width: 44em;
+    min-width: 14em;
+    padding-bottom:3.5em;
+    box-sizing: border-box;   
+    display:flex;
+    flex-wrap:wrap;
+}
+.container .subcontainer{
+    margin:auto;
+}
+.subcontainer .preview-pic{
+    transition:transform .2s;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    margin:auto;
+    box-shadow: 2px 1px 5px grey;    
+}
+.subcontainer .preview-pic:hover{
+    transform:scale(1.05);
+}
+
+/* 首页缩略图文字的格式 */
+.preview-title{
+    font-family: 'Qsregular', serif;
+    color: #202124;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    text-decoration:none;
+    border-bottom: 1px solid #1d4257;
+}
+/* 决定个人介绍文字+缩略图介绍文字的格式是一样的 */
+span{
+    font-family: 'Qsregular', serif;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 100%;
+    line-height: 30px;
+    padding-top:  18px;
+    margin-top: 18px;
+    color:#4B445A;
+}
+p{
+    font-family: 'Qsregular', serif;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 100%;
+    line-height: 30px;
+    color:#4B445A;
+}
+
+span.preview-des{
+    margin-top: 1px;
+    padding-top: 3px;
+    padding-bottom:  0px;
+    margin-bottom: 0px;
+    display:inline-block;
+    float:left;
+}
+span.preview-more{
+    display:inline-block;
+    float: right;
+    margin: 1px;
+    padding-top: 3px;
+    padding-bottom:  0px;
+    margin-bottom: 0px;
+    color:#202124;
+    text-decoration:underline;
+    
+}
+span.preview-more:hover{
+    color:#202124;
+    font-weight:900;
+}
+    span.view{
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+    color:#202124;
+    font-size: 16px;
+}
+
+    a.socialmedia{
+        font-family: 'Qsregular', serif;
+        font-weight: 300;
+        font-size: 18px;
+        color:#4A728D;
+        text-decoration: underline;   
+        padding-top:5rem;
+        padding-bottom: 5px;
+       
+    }
+    a.socialmedia:hover{
+        color:#4A728D;
+        font-weight:900;
+    }
+
+
+
+.banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;   
+}
+
+  
+
+    /* 首页介绍的图片 */
+    .intro{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 3rem;
+        padding-bottom: 90px;
+        padding-top: 50px
+        /* border:solid 5px black; */
+        
+    }
+    /* 在 intro 上做下边界线 */
+    /* div.intro{
+        display:solid;
+        border-bottom: solid 1px grey;
+    } */
+    .about{
+        margin-left: 0rem;
+    }
+    span.short-about{
+        width: 40rem;
+        line-height: 2rem;
+    }
+
+    .video{
+        width: 100%;
+        text-align: center;
+    }
+
+footer{
+    margin: 5rem 3rem 1.8rem 3rem;
+    display: block;
+    text-align: center;
+}
+.footer {
+    font-size: 15px;
+    font-family: 'Qsregular', sans-serif;
+    font-weight: 300;
+    line-height: 35px;
+}
+.bodysection-top{
+    max-width: 1200px;
+    margin:auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: space-between; 
+    box-sizing: border-box; 
+}
+.bodysection-top-title{
+    font-family: 'Qsregular', serif;
+    font-size: 30px;
+    color: #202124;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+.bodysection .sidebar{
+    height: 300px;
+    margin-right: 1.25rem;
+    padding-right:0px;
+    display:block;
+    position: fixed;
+    z-index: 1;
+    top: 31px;
+    left: 100px;
+}
+.sidebar .sidebar-item{
+    text-decoration: none;
+    color: #202124;
+    font-family: 'Qsregular', serif;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 25px;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 15px;
+
+}
+.sidebar ul li{
+    margin: 10px 0;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: #202124;
+    font-family: 'Qsregular', serif;
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.sidebar ul li a:hover{
+    color:#202124;
+    font-weight:900;
+}
+.bodysection-main{
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin:auto; 
+}
+
+
