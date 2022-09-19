@@ -21,17 +21,6 @@ nav{
     width: 100%;
 }
 
-/* 
-这是给 top nagivation bar 里的图片用的格式
-nav img{
-    position: absolute;
-    width: 200px;
-    right: 5%;
-    color: #202124;
-    font-size: 23px;
-    width: 55px;
-} */
-
 nav ul{
     float: right;
     margin-right: 13.25rem;
@@ -54,12 +43,6 @@ nav ul li a{
     text-decoration: none;
     display: inline-block;
 }
-
-/* class=navi-top 是顶部菜单的格式 */
-.navi-top:hover{
-    font-weight:bolder;
-}
-
 
 /* 决定首页文字的格式 */
 h1{
@@ -127,6 +110,10 @@ main .bodyinfo{
 .subcontainer .preview-pic:hover{
     transform:scale(1.05);
 }
+.bodysection-main{
+    text-align: justify;
+    text-justify:inter-ideograph;
+}
 
 /* 首页缩略图文字的格式 */
 .preview-title{
@@ -141,7 +128,10 @@ main .bodyinfo{
     text-decoration:none;
     border-bottom: 1px solid #1d4257;
 }
-/* 决定个人介绍文字+缩略图介绍文字的格式是一样的 */
+.bodysection-main{
+    text-align: justify;
+    text-justify:inter-ideograph;
+}
 span{
     font-family: 'Qsregular', serif;
     font-size: 18px;
