@@ -44,7 +44,6 @@ nav ul li a{
     display: inline-block;
 }
 
-/* 决定首页文字的格式 */
 h1{
         font-family: 'Qsregular', serif;
         color: #202124;
@@ -128,10 +127,10 @@ main .bodyinfo{
     text-decoration:none;
     border-bottom: 1px solid #1d4257;
 }
-.bodysection-main{
+/* .bodysection-main{
     text-align: justify;
     text-justify:inter-ideograph;
-}
+} */
 span{
     font-family: 'Qsregular', serif;
     font-size: 18px;
