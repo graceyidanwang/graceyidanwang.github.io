@@ -109,10 +109,10 @@ main .bodyinfo{
 .subcontainer .preview-pic:hover{
     transform:scale(1.05);
 }
-.bodysection-main{
+/* .bodysection-main{
     text-align: justify;
     text-justify:inter-ideograph;
-}
+} */
 
 /* 首页缩略图文字的格式 */
 .preview-title{
