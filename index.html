@@ -2,16 +2,26 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="Author" content="Yidan Wang">
    <title>Yidan's UX Journey</title>
    <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
    <meta name="theme-color" content="#D3ABA5">
    <style>
-    @font-face{
-        font-family:Qsregular;
-        src:url(./assets/webfonts/Quicksand-Regular.ttf);
+    @font-face {
+        font-family: Qsregular;
+        src: url(./assets/webfonts/Quicksand-Regular.ttf);
+    }
+    .bodyinfo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .container {
+        width: 45%;
+        min-width: 300px;
     }
    </style>
 </head>
@@ -19,7 +29,6 @@
     <nav>
         <ul>
             <li><a class="navi-top" href="#work">Work</a></li>      
-            <!-- <li><a class="navi-top" href="" >About Me</a></li> -->
             <li><a class="navi-top" href="./Resume_Yidan Wang.pdf" target="_blank">Resume</a></li>
         </ul>
     </nav>
@@ -40,20 +49,28 @@
                 </span>
             </div>
         </div>
+
         <div id="work" class="bodyinfo">
+            <!-- Project 1 -->
             <div class="container">
                 <div class="subcontainer">
-                    <a href="./CovidApp.html" target="_blank"><img class="preview-pic" src="./images/Covidapp/Covidapp_cover.png" alt="Covid App Redesign"></a>  
+                    <a href="./CovidApp.html" target="_blank">
+                        <img class="preview-pic" src="./images/Covidapp/Covidapp_cover.png" alt="Covid App Redesign">
+                    </a>  
                     <div>
-                       <a class="preview-title" href="./CovidApp.html" target="_blank"> <h2 class="preview-title">Covid Vaccine Booking App</h2></a>
+                        <a class="preview-title" href="./CovidApp.html" target="_blank"><h2 class="preview-title">Covid Vaccine Booking App</h2></a>
                         <span class="preview-des">Book and manage vaccine appointments with ease.</span>
                         <a class="preview-title" href="./CovidApp.html" target="_blank"><span class="preview-more">More</span></a>
                     </div>
                 </div>
-            </div>           
+            </div>
+
+            <!-- Project 2 -->
             <div class="container">
-                <div id="work" class="subcontainer">
-                    <a href="./Steam.html" target="_blank"><img class="preview-pic" src="./images/Steam/Steam_Home3.png" alt="Steam Website UX Redesign"></a> 
+                <div class="subcontainer">
+                    <a href="./Steam.html" target="_blank">
+                        <img class="preview-pic" src="./images/Steam/Steam_Home3.png" alt="Steam Website UX Redesign">
+                    </a> 
                     <div>
                         <a class="preview-title" href="./Steam.html" target="_blank"><h2 class="preview-title">Steam Website UX Redesign</h2></a>
                         <span class="preview-des">Simplified Information Architecture for players to easily navigate.</span>
@@ -61,13 +78,43 @@
                     </div>
                 </div>
             </div>
-         </div>
+
+            <!-- Project 3 -->
+            <div class="container">
+                <div class="subcontainer">
+                    <a href="./OrderReturn.html" target="_blank">
+                        <img class="preview-pic" src="./images/OrderReturn/OrderReturn_Cover.png" alt="Order Return UX">
+                    </a> 
+                    <div>
+                        <a class="preview-title" href="./OrderReturn.html" target="_blank"><h2 class="preview-title">Order Return Portal</h2></a>
+                        <span class="preview-des">Tested and improved return process to reduce confusion and cart abandonment.</span>
+                        <a class="preview-title" href="./OrderReturn.html" target="_blank"><span class="preview-more">More</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="container">
+                <div class="subcontainer">
+                    <a href="./BuyNow.html" target="_blank">
+                        <img class="preview-pic" src="./images/BuyNow/BuyNow_Cover.png" alt="Buy Now Feature Research">
+                    </a> 
+                    <div>
+                        <a class="preview-title" href="./BuyNow.html" target="_blank"><h2 class="preview-title">Buy Now Feature</h2></a>
+                        <span class="preview-des">Exploratory and usability research on single-click checkout experience.</span>
+                        <a class="preview-title" href="./BuyNow.html" target="_blank"><span class="preview-more">More</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer class="footer">
         <div>&copy; Yidan Wang. All rights reserved.</div>       
         <div>
             <a class="link" href="mailto:grace.wang.yidan@gmail.com">Email</a> |
             <a class="link" href="https://www.linkedin.com/in/grace-yidan-wang/">LinkedIn</a>
+        </div>
     </footer>
 </body>    
 </html>
